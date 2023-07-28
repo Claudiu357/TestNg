@@ -1,6 +1,4 @@
-package neculaclaudiu.tests.testNg;
-
-import neculaclaudiu.driver.ChromeDriverManager;
+import driver.ChromeDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,7 +9,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void initChromeBrowser(){
-        driver = ChromeDriverManager.createChromeDriver();
+        driver = ChromeDriverManager.createChromeDriverWithOptions();
     }
 
     @AfterMethod
